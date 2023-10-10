@@ -1,0 +1,78 @@
+.quoraBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    border:1px solid lightgray;
+    background-color: #fff;
+    max-width: 700px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quoraBox_info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    /* border:1px solid lightgray; */
+    background-color: #fff;
+    max-width: 700px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quorabox__btn hr{
+    height: 20px;
+}
+.quorabox__btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.quorabox__btn button{
+background: transparent;
+border:none;
+margin-left: 5px;
+
+}
+.quorabox__btn span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quoraBox input{
+    padding: 10px;
+    width: 500px;
+    margin-left: 20px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 25px;
+}
+.quoraBox input::placeholder{
+    color: gray;
+}
+.quoraBox:hover{
+    border:1px solid rgb(175,175,175);
+}
+.quoraBox_info{
+    display: flex;
+    align-items: center;
+}
+.quoraBox .quoraBox_info img{
+    border-radius: 50%;
+}
+.quoraBox_info h5{
+    color: rgb(129,129,129);
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.quoraBox_quora{
+    display: flex;
+    margin-top: 10px;
+}

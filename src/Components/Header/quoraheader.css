@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px grey;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+
+}
+.header .content img{
+    height: 30px;
+    width: 100px;
+}
+.header .content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   margin-right: 100px;
+
+}
+.header .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #747474;
+}
+.header button{
+  width: 15vw;
+  height: 5vh;
+  border: none;
+  border-radius: 3px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .globe svg {
+    font-size: 20px;
+    color: #747474;
+    cursor: pointer;
+}
+.header .icon{
+  padding: 10px 10px;
+}
+.header .icon:hover{
+  background-color: #d5d5d5;
+  color: red;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.input{
+    background-color: rgb(185, 222, 254);
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+
+}
+.input input[type='search']{
+    width: 17rem;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+}
+input input[type='search']::placeholder{
+    font-size: 1rem;
+    color: rgb(49,49,49);
+    font-weight: 100;
+}
+.input i{
+    font-size: 0.8rem;
+    color: grey;
+
+}
+/*  */
+.modal_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+  }
+  
+  .modal_title > h5 {
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+  
+  .modal_title > h5:hover {
+    color: #b92b27;
+  }
+  
+  .modal__info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .modal__info > img{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .modal__info > p {
+    margin-left: 10px;
+    font-size: small;
+    color: gray;
+  }
+  
+  .modal__info > .modal__scope {
+    display: flex;
+    align-items: center;
+    color: rgb(98, 98, 98);
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal__Field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+  }
+  
+  .modal__Field > .modal__fieldLink {
+    color: gray;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+  }
+  .modal__scop{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  
+  .modal__Field > .modal__fieldLink > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+  }
+  
+  .modal__buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal__buttons > .cancel {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    color: gray;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal__buttons > .cancel:hover {
+    color: red;
+  }
+  
+  .modal__buttons > .add {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background-color: #222;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .modal__buttons > .add:hover {
+    background-color: #eee;
+    color: #222;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .qHeader__icons {
+      display: none;
+    }
+  
+    .qHeader__input {
+      display: none;
+    }
+  }
