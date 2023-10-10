@@ -10,12 +10,7 @@ function Quorabox() {
   return (
     <>
     <div className='quoraBox'>
-    <div className="post__body">+
-            <div className='post__question'>
-            {/* <p>This is a test Question</p>   */}
-            <img src="https://qph.cf2.quoracdn.net/main-qimg-b2bc19e5060f50945cd08c91387f336b" alt="" srcset="" />
-            <button onClick={()=> setIsModalOpen(true)} className='post__btn'>Answer</button>
-            <Modal open = {isModalOpen}
+    <Modal open = {isModalOpen}
           closeIcon = {Close} onClose={()=> setIsModalOpen(false)}
           closeOnEsc center closeOnOverlayClick={false} 
           styles={{
@@ -23,16 +18,51 @@ function Quorabox() {
               height:"auto"
             }
           }}>
-            <div className="modal__question">
-                <h1>This is a test question</h1>
-                <p>Asked by {" "}</p><span>Username</span>{" "}on {" "}TimeStamp
+        
+            <div className="modal_title" style={{display:"flex",justifyContent:"space-around"  }}>
+              <h5>Add Question</h5>
+              <h5>Create Post</h5>
             </div>
-            <div className="modal__answer">
-                <ReactQuil placeholder='Enter Your answer'/>
-                <div className="modal__buttons">
-
-                </div>
-
+            <div className='tips'>
+          <h3>Tips on getting good answers quickly</h3>
+         <ul>
+          <li>Make sure your question has not been asked already</li>
+          <li>Keep your question short and to the point</li>
+          <li>Double-check grammar and spelling</li>
+         </ul>
+         </div>
+            <div className="modal__info">
+              <img src="https://qph.cf2.quoracdn.net/main-thumb-2343499123-200-klaahntbbdzxnxrjcnjiysashxmagsfc.jpeg" alt="" srcset=""className="avatar" />
+              <div className="modal__scop">
+              <i class="fa-solid fa-users"></i>
+                <p>Public</p>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+            <div className="modal__Field">
+              <input style={{outline:"none",padding:'20px'}} type="text" name="" id="" placeholder="Start your Question with what, How, Why, etc."/>
+              <div style={{
+                display:"flex",
+                flexDirection:"column"
+              }}>
+                {/* <input value={inputUrl}
+                onChange={(e)=>{
+                  setInputUrl(e.target.value)
+                }} style={{
+                  margin :"5px 0",
+                  border: "1px solid lightgray",
+                  padding:"10px",
+                  outline: "2px solid #000"
+                }} type="text" placeholder="Optional include a link that give context" />
+                { */}
+                  {/* inputUrl !== "" && <img style={{
+                    height:"40vh",
+                    objectFit:"contain"
+                  }} src={inputUrl} /> */}
+                  
+                {/* } */}
+                {/* <img src={inputUrl} alt="image" /> */}
+              </div>
             </div>
             <div className="modal__button">
               <button className="cancel" onClick={()=>setIsModalOpen(false)}>
@@ -42,10 +72,7 @@ function Quorabox() {
                 Add Question
               </button>
             </div>
-
-            </Modal>
-            </div>
-        </div>
+          </Modal>
         <div className="quoraBox_info">
             <img src="https://qph.cf2.quoracdn.net/main-thumb-2343499123-50-klaahntbbdzxnxrjcnjiysashxmagsfc.jpeg" alt="" />
         <div className="quoraBox_quora">
@@ -55,7 +82,7 @@ function Quorabox() {
         <div className="quorabox__btn">
           <span>
           <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g class="icon_svg-stroke" stroke="#666" stroke-width="1.5" fill="none" fill-rule="evenodd"><g transform="translate(9 7)"><path d="M3 6v-.5A2.5 2.5 0 1 0 .5 3" stroke-linecap="round" stroke-linejoin="round"></path><circle class="icon_svg-fill_as_stroke" fill="#666" cx="3" cy="8.5" r="1" stroke="none"></circle></g><path d="M7.5 4h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-3L9 22v-3H7.5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" stroke-linejoin="round"></path></g></svg>
-          <button onClick={()=> setIsModalOpen(true)} className='post__btn'>Answer</button>
+          <button onClick={()=> setIsModalOpen(true)} className='post__btn'>Ask</button>
           </span>
           <hr />
           <span>

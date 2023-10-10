@@ -127,6 +127,11 @@
     margin-right: 40px;
     cursor: pointer;
   }
+  .modal__title:active{
+    border-bottom: 2px solid blue;
+    width: 50%;
+
+  }
   
   .post__footerAction {
     background-color: lightgray;
@@ -163,13 +168,26 @@
     flex-direction: column;
     margin-top: 20px;
   }
-  
+  .tips{
+    background: #EBF0FF;
+    padding: 30px;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 25px; 
+  }
+  .tips h3{
+    color: #2E69FF;
+  }
+  .tips ul li{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #2E69FF;
+  }
   .modal__question > h1 {
     color: #8f1f1b;
     font-weight: 600;
     margin-bottom: 10px;
   }
-  
   .modal__question > p {
     color: gray;
     font-size: small;
@@ -235,7 +253,7 @@
   }
   
   .react-responsive-modal-modal {
-    height: 400px;
+    height: 80vh;
   }
   
   .quill {

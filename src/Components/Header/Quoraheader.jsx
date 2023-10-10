@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../Header/quoraheader.css'
 import "../css/Quora.css"
+import "../css/Post.css"
 import "react-responsive-modal/styles.css"
 import Modal from "react-responsive-modal";
 import { Link } from "react-router-dom";
@@ -51,10 +52,18 @@ function Quoraheader() {
             }
           }}>
         
-            <div className="modal_title">
+        <div className="modal_title" style={{display:"flex",justifyContent:"space-around"  }}>
               <h5>Add Question</h5>
-              <h5>Share Link</h5>
+              <h5>Create Post</h5>
             </div>
+            <div className='tips'>
+          <h3>Tips on getting good answers quickly</h3>
+         <ul>
+          <li>Make sure your question has not been asked already</li>
+          <li>Keep your question short and to the point</li>
+          <li>Double-check grammar and spelling</li>
+         </ul>
+         </div>
             <div className="modal__info">
               <img src="https://qph.cf2.quoracdn.net/main-thumb-2343499123-200-klaahntbbdzxnxrjcnjiysashxmagsfc.jpeg" alt="" srcset=""className="avatar" />
               <div className="modal__scop">
