@@ -10,8 +10,8 @@ function Layout() {
       <Quoraheader/>
       <div className="quora_contents">
         <div className='quora_content'>
-        <Sidebar/>
         <Outlet/>
+        {/* <Sidebar/> */}
         </div>
       </div>
     </div>
