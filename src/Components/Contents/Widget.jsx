@@ -1,34 +1,30 @@
-import React from 'react'
-import Widgetcontent from './Widgetcontent'
-import "../css/Widget.css"
+import React from "react";
+import Widgetcontent from "./Widgetcontent";
+import "../css/Widget.css";
 
 function Widget() {
   return (
-    <div className='widget'>
+    <div className="widget">
       <div className="widget__header">
         <h5>Space to Follow</h5>
-        
       </div>
       <div className="widget__contents">
-        <Widgetcontent/>
+        <Widgetcontent />
       </div>
       <div className="widget__contents">
-        <Widgetcontent/>
+        <Widgetcontent />
       </div>
       <div className="widget__contents">
-        <Widgetcontent/>
+        <Widgetcontent />
       </div>
       <div className="widget__contents">
-        <Widgetcontent/>
+        <Widgetcontent />
       </div>
       <div className="widget__contents">
-        <Widgetcontent/>
+        <Widgetcontent />
       </div>
-
-     
     </div>
-    
-  )
+  );
 }
 
-export default Widget
+export default Widget;
