@@ -134,17 +134,26 @@
   }
   
   .post__footerAction {
-    background-color: lightgray;
+    border:1px solid gray;
     padding: 5px;
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     border-radius: 33px;
+    padding: 5px;
+    border-radius: 25px;
   }
   .post__footerAction > i {
     color: gray;
     margin-right: 40px;
     cursor: pointer;
+    color: blue;
+  }
+  .post__footerAction h4{
+    margin-left:-28px;
+    margin-right: 5px;
+    color: darkgray;
   }
   
   .post__footerAction > i:hover {

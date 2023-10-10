@@ -59,9 +59,9 @@ function Post() {
         </div>
         <div className="post__footer">
             <div className="post__footerAction">
-            <i class="fa-solid fa-arrow-up"></i>
-            <i class="fa-solid fa-arrow-down"></i>
+            <i class="fa-solid fa-arrow-up"></i><h4>Upvote</h4>              
             </div>
+            <i style={{marginLeft:"10px"}} class="fa-solid fa-arrow-down"></i>
             <i class="fa-solid fa-repeat"></i>
             <i class="fa-solid fa-comment"></i>
             <div className="post__footerLeft">

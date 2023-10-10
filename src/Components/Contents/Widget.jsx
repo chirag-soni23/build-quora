@@ -12,8 +12,22 @@ function Widget() {
       <div className="widget__contents">
         <Widgetcontent/>
       </div>
+      <div className="widget__contents">
+        <Widgetcontent/>
+      </div>
+      <div className="widget__contents">
+        <Widgetcontent/>
+      </div>
+      <div className="widget__contents">
+        <Widgetcontent/>
+      </div>
+      <div className="widget__contents">
+        <Widgetcontent/>
+      </div>
 
+     
     </div>
+    
   )
 }
 

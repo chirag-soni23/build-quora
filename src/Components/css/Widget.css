@@ -8,6 +8,9 @@
     border-radius: 5px;
     height: fit-content;
     background-color: #fff;
+    position: fixed;
+    top: 20%;
+    right: 80px;
 }
 .widget__header{
     border-bottom: 1px solid lightgray;

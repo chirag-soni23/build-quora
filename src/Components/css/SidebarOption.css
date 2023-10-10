@@ -1,6 +1,9 @@
 .sidebarOptions{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: 0;
 }
 .sidebarOption{
     display: flex;

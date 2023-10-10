@@ -38,7 +38,7 @@
     color: #747474;
 }
 .header button{
-  width: 15vw;
+  width: 10vw;
   height: 5vh;
   border: none;
   border-radius: 3px;
@@ -48,6 +48,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 .header .globe svg {
@@ -63,22 +65,25 @@
   color: red;
   padding: 10px 10px;
   cursor: pointer;
+
 }
 .input{
-    background-color: rgb(185, 222, 254);
-    width: 100%;
+    background-color: #fff;
+    width: 30%;
     padding: 0.4rem 0.5rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     border-radius: 0.2rem;
-
-}
-.input input[type='search']{
-    width: 17rem;
-    border: none;
-    background: transparent;
-    font-size: 18px;
+    border: 1px solid rgb(96, 95, 95);
+    
+  }
+    .input input[type='search']{
+      width: 17rem;
+      outline: none;
+      border: none;
+      background: transparent;
+      font-size: 18px;
 }
 input input[type='search']::placeholder{
     font-size: 1rem;
