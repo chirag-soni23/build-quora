@@ -3,19 +3,20 @@
     flex-direction: column;
     padding: 10px;
     background-color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     border: 1px solid lightgray;
     border-radius: 5px;
     max-width: 700px;
     box-shadow: 0px 5px 8px -9px solid rgab(0, 0, 0, 0.5);
   }
-  
  .post .post__info {
     display: flex;
     align-items: center;
   }
   .post  .post__info img{
     border-radius: 50%;
+    height: 40px;
+    width: 40px;
   }
   
   .post__info > h4 {
@@ -85,6 +86,9 @@
     border-radius: 5px;
     margin-top: 20px;
   }
+  .post__question img{
+    margin-top: 20px;
+  }
   
   .post__question .post__btn:hover {
     color: #222;
@@ -109,7 +113,7 @@
   .post__body > img {
     width: 100%;
     max-height: 400px;
-    object-fit: contain;
+    object-fit: cover;
     background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
@@ -148,12 +152,15 @@
     color: gray;
     margin-right: 40px;
     cursor: pointer;
-    color: blue;
+    color: darkgray;
   }
   .post__footerAction h4{
     margin-left:-28px;
     margin-right: 5px;
     color: darkgray;
+  }
+  .post__question p{
+    width: 100%;
   }
   
   .post__footerAction > i:hover {

@@ -51,14 +51,9 @@
   padding: 10px;
   border-radius: 25px;
 }
-
-.header .globe svg {
-    font-size: 20px;
-    color: #747474;
-    cursor: pointer;
-}
 .header .icon{
   padding: 10px 10px;
+  color: gray;
 }
 .header .icon:hover{
   background-color: #d5d5d5;

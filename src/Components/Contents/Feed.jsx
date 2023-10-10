@@ -8,8 +8,8 @@ function Feed() {
     <div className='feed'>
       <Quorabox/>
       <Post/>
-      <Post/>
-      <Post/>
+      {/* <Post/>
+      <Post/> */}
       </div>
   )
 }

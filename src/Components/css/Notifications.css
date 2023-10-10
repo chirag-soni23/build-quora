@@ -9,12 +9,10 @@
     display: none;
 }
 .notification-wrapper{
-    width:100vw;
-    /* height:100%; */
-/* padding-top:4.2rem; */
+    width:100%;
 }
 .notify-wrap{
-    width:100%;
+    width:100vw;
     height:100%;
     display: flex;
     justify-content: center;
