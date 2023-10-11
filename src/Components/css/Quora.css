@@ -9,6 +9,7 @@
     background-color: rgba(0,0,0,0.05);
     min-width:fit-content;
     width: 100%;
+    flex-wrap: wrap;
 }
 .quora_content{
     display: flex;

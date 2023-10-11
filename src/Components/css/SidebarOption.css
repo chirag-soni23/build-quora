@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 20%;
-    left: 0;
+    top: 10%;
+    left: 1%;
 }
 .sidebarOption{
     display: flex;
@@ -11,6 +11,26 @@
     padding: 10px;
     cursor: pointer;
 }
+.sideinfo{
+ 
+    /* width:60%; */
+     /* position: relative; */
+     /* left:110px; */
+     text-align:justify;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     gap: 2px;
+     align-items: flex-start;
+     padding:0.3rem;
+     
+  }
+  .sideinfo {
+    padding: 0.2rem;
+    color:grey;
+    font-size: 14px;
+   
+  }
 .sidebarOption:hover{
     background-color: rgba(211,211,211);
     border-radius: 5px;
@@ -20,6 +40,10 @@
     border-radius: 5px;
     margin-left: 2px;
 }
+.sideinfo a{
+    text-decoration: none;
+   }
+
 .sidebarOption > p{
     margin-left: 10px;
     color: gray;

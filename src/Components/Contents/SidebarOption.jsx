@@ -64,6 +64,25 @@ function SidebarOption() {
         <i class="fa-solid fa-plus"></i>
         <p className="text">Discover Spaces</p>
       </div>
+      <div className="sideinfo">
+            <hr/>
+            <div>
+            <a href="">Home•</a>
+            <a href="">Careers•</a>
+            </div>
+            <div>
+            <a href="">Terms•</a>
+            <a href="">Privacy•</a>
+            </div>
+            <div>
+            <a href="">Acceptable Use•</a>
+            <a href="">Business•</a>
+            </div>
+            <div>
+            <a href="">YourChoices•</a>
+            <a href=""> Officier•</a>
+            </div>
+        </div>
     </div>
   );
 }
