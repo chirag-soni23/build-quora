@@ -2,6 +2,7 @@ export const Userdata = [
     {
       Id:1,
       name: "Seeking Truth",
+      description:"Posted by Premjeet Yadav 🗻.9mo",
       logoimage:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0phVj_II0bh3FgSdhXTW8yk33he0Oo2RvloUcqmny6b_tcIePtgKHj4nuuq0wJ3Uhy0&usqp=CAU",
       Question:
@@ -15,6 +16,7 @@ export const Userdata = [
     {
       Id:2,
       name: "Living Relation",
+      description: "Lives in San Francisco Bay Area . Updated 1y",
       logoimage:
         "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/sidharth-malhotra-exclusive_1-three_four.jpg?VersionId=WIxY27jOtO6dd6UrYdl8m4nTtjPTbcdx",
       Question: " Sidharth Malhotra REACTS to the big marriage questions?",
@@ -27,6 +29,7 @@ export const Userdata = [
     {
       Id:3,
       name: "Quora Sessions ",
+      description: "Posted by Lucia Baratto 🏔 .1y",
       logoimage:
         "https://www.ufpb.br/ufpb/icons/redes-sociais/quora.png/@@images/image.png",
       Question: " Explore how your business can grow with Quora.?",
@@ -39,6 +42,7 @@ export const Userdata = [
     {
       Id:4,
       name: "Quora Sessions ",
+      description :"Sponsered",
       logoimage:
         "https://www.ufpb.br/ufpb/icons/redes-sociais/quora.png/@@images/image.png",
       Question: "How do you teach a kid how to think, not what to think?",

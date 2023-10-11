@@ -24,7 +24,7 @@ function Post() {
                 </span>{" "}
                 .<span className="span">Follow</span>
               </h4>
-              {/* <p>{item.Question}</p> */}
+              <p>{item.description}</p>
             </div>
           </div>
           <div className="post__body">
