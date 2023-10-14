@@ -54,12 +54,22 @@
 .header .icon{
   padding: 10px 10px;
   color: gray;
+  text-decoration: none;
+
+  padding: 10px 10px;
+  
 }
 .header .icon:hover{
-  background-color: #d5d5d5;
+  /* background-color: #d5d5d5; */
   color: red;
   padding: 10px 10px;
   cursor: pointer;
+  text-decoration: underline;
+  border-bottom: 2px solid red;
+
+
+  /* text-underline-position: under; */
+
 
 }
 .input{

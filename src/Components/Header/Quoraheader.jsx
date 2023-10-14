@@ -13,7 +13,7 @@ function Quoraheader() {
     <div className="header">
       <div className="content">
         <div className="logo">
-      <Link to="/home"> <img
+      <Link to="/"> <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Quora_logo_2015.svg/800px-Quora_logo_2015.svg.png"
             alt="logo"
           /></Link>
