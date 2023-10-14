@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Quorabox.css";
 import Modal from "react-responsive-modal";
+import ReactQuill from "react-quill";
 import { useState } from "react";
 import "../css/Post.css";
 function Quorabox() {
