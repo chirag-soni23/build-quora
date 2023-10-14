@@ -1,5 +1,7 @@
 import React from 'react'
 import "../css/Notifications.css"
+import { notifications } from '../Constant/Constant'
+
 
 
 function Notification() {
@@ -41,9 +43,27 @@ function Notification() {
           </div> */}
           {/* <div className="notify-text">No New Notifications</div>
           <div className="notify-text1">Notifications you received in the last 30 days will show up here.</div> */}
-          
-         
+         {notifications.map((data)=>{
+          return  <div className="main">
+            <div className='side' key={data.id}>
+              <img src={data.logoImage}alt="" />
+            </div>
+            <div style={{display:'flex', flexDirection:"column",gap:"10px"}}>
+            <div className='side2'>
+   Highlighted in <span>{data.title}  </span>.Posted by  <span>{data.name}</span> <span>{data.timestamp}</span>
+</div>
 
+<div className='side22'>
+{data.message}
+
+            </div>
+            </div>
+            <div className='side3' >
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z" class="icon_svg-stroke" stroke-width="1.5" stroke="#666" fill="none"></path></svg>
+
+            </div>
+          </div>
+         })}
 
         </div>
       <div className="notify-wrap3">

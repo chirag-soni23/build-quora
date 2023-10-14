@@ -53,4 +53,36 @@ export const Userdata = [
          
       },
   ];
+
+  export const notifications = [
+    {
+      id: 1,
+      title: "Earn Money Online",
+      logoImage: "https://qph.cf2.quoracdn.net/main-thumb-t-2307-100-tgwpfzgzdpnbkxjhrhzjzisqgaazhuxl.jpeg",
+      name:"Sagar Ahuja",
+      timestamp: "09:30 AM",
+      message: "It took me 9 years to learn this but I'll teach you in 3 minutes. Here are 14 uncomfortable truths about life…",
+      
+      
+    },
+    {
+      id: 2,
+      title:'Daily Coding',
+      logoImage:"https://qph.cf2.quoracdn.net/main-thumb-t-3451-100-vvvhwelvamaxjlecyuuxtleqcrihfcdg.jpeg",
+      name:"Chirag Soni",
+      timestamp: "10:15 AM",
+      message: "Your post has been liked by John.",
+
+    },
+    {
+      id: 3,
+      title:"Earn Money",
+      logoImage:"	https://qph.cf2.quoracdn.net/main-thumb-t-1510-100-ErS2ihCvcHUYLGS4voHE9gGjje7OreUy.jpeg",
+      name:"Simran Ahuja",
+      timestamp: " 11:05 AM",
+      message: "New message from Sarah: 'Hello there!'",
+      
+    },
+    // Add more notification objects as needed
+  ];
   
