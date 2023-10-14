@@ -83,6 +83,5 @@ export const Userdata = [
       message: "It took me 9 years to learn this but I'll teach you in 3 minutes. Here are 14 uncomfortable truths about life…",
       
     },
-    // Add more notification objects as needed
   ];
   

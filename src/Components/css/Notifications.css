@@ -15,6 +15,7 @@
     padding: 20px;
     gap: 30px;
     border-bottom: 1px solid rgb(179, 179, 179);
+    cursor: pointer;
 
 }
 .main .side2{
