@@ -43,18 +43,19 @@ function Notification() {
           </div> */}
           {/* <div className="notify-text">No New Notifications</div>
           <div className="notify-text1">Notifications you received in the last 30 days will show up here.</div> */}
-         {notifications.map((data)=>{
+         {notifications.map((data)=>{     
           return  <div className="main">
             <div className='side' key={data.id}>
               <img src={data.logoImage}alt="" />
             </div>
             <div style={{display:'flex', flexDirection:"column",gap:"10px"}}>
             <div className='side2'>
-   Highlighted in <span>{data.title}  </span>.Posted by  <span>{data.name}</span> <span>{data.timestamp}</span>
+   Highlighted in <span>{data.title}</span>.Posted by  <span>{data.name}</span> <span>{data.timestamp}</span>
 </div>
-
-<div className='side22'>
 {data.message}
+
+     <div className='side22'>
+
 
             </div>
             </div>
@@ -63,7 +64,7 @@ function Notification() {
 
             </div>
           </div>
-         })}
+})}
 
         </div>
       <div className="notify-wrap3">
@@ -71,9 +72,10 @@ function Notification() {
       </div>
    
   
-    </div>
-  </div>
-  )
+   </div>
+   </div>
+
+    )
 }
 
 export default Notification

@@ -45,7 +45,7 @@ function Quoraheader() {
                     <input id="search" type="search" placeholder="Search" />
                 </div>
             <div className="globe icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-globe"></i>
 
             </div>
           <button onClick={()=> setIsModalOpen(true)}>Add Questions</button>
