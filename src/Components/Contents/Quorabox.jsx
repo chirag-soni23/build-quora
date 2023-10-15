@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Quorabox.css";
-import Modal from "react-responsive-modal";
+import Modal from "react-responsive-modal"
 import ReactQuil from "react-quill";
 import { useState } from "react";
 import "../css/Post.css";
@@ -141,7 +141,7 @@ function Quorabox() {
             <button
               className="adds"
               type="Submit"
-              onClick={() => setIsModalOpen(false)}
+              onClick={() => setIsModalOpen(true)}
             >
               Add Question
             </button>
