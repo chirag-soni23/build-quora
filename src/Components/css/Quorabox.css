@@ -72,6 +72,10 @@ margin-left: 5px;
     font-size: large;
     font-weight: bold;
 }
+.input:hover{
+    background-color: #dfdfdf;
+    
+}
 .quoraBox_quora{
     display: flex;
     margin-top: 10px;

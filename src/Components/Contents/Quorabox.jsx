@@ -153,9 +153,9 @@ function Quorabox() {
             alt=""
           />
           <div className="quoraBox_quora">
-            <input
+            <input className="input" style={{cursor:'pointer',}}
               type="text"
-              placeholder="What do you want to ask or Share ?"
+              placeholder="What do you want to ask or Share ?" readOnly
             />
           </div>
         </div>
