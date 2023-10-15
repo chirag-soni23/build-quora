@@ -79,7 +79,7 @@ export const Userdata = [
       title:"Earn Money",
       logoImage:"	https://qph.cf2.quoracdn.net/main-thumb-t-1510-100-ErS2ihCvcHUYLGS4voHE9gGjje7OreUy.jpeg",
       name:"Simran Ahuja",
-      timestamp: " 11:05 AM",
+      timestamp: "11:05 AM",
       message: "It took me 9 years to learn this but I'll teach you in 3 minutes. Here are 14 uncomfortable truths about life…",
       
     },
