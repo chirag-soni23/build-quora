@@ -33,7 +33,7 @@ function Quoraheader() {
                 <div className="mod">
                 <div className="modal__question">
                 <i class="fa-solid fa-globe"></i>
-                  <p>Everone</p>
+                  <p>Everyone</p>
                   <span><i class="fa-solid fa-angle-down"></i></span>
                 </div>
                 </div>

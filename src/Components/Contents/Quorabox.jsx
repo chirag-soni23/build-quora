@@ -33,7 +33,7 @@ function Quorabox() {
                 <div className="mod">
                 <div className="modal__question">
                 <i class="fa-solid fa-globe"></i>
-                  <p>Everone</p>
+                  <p>Everyone</p>
                   <span><i class="fa-solid fa-angle-down"></i></span>
                 </div>
                 </div>
@@ -169,7 +169,7 @@ function Quorabox() {
                 ></path>
               </g>
             </svg>
-            <button onClick={() => setIsModalOpen(true)} className="post__btn">
+            <button style={{cursor:"pointer"}} onClick={() => setIsModalOpen(true)} className="post__btn">
               Ask
             </button>
           </span>
@@ -203,7 +203,7 @@ function Quorabox() {
                 ></path>
               </g>
             </svg>
-            <button>Answer</button>
+            <button style={{cursor:"pointer"}}>Answer</button>
           </span>
           <hr />
           <span>
@@ -229,7 +229,7 @@ function Quorabox() {
                 ></path>
               </g>
             </svg>
-            <button>Post</button>
+            <button style={{cursor:"pointer"}} onClick={() => setIsModalOpen2(true)}>Post</button>
           </span>
         </div>
       </div>
