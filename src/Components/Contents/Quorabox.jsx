@@ -14,86 +14,108 @@ function Quorabox() {
       <div className="quoraBox">
         {/* modal */}
         <Modal
-                open={isModalOpen2}
-                closeIcon={Close}
-                onClose={() => setIsModalOpen2(false)}
-                closeOnEsc
-                center
-                closeOnOverlayClick={false}
-                styles={{
-                  overlay: {
-                    height: "auto",
-                  },
-                }}
-              >
-                <div className="modal_title" style={{display:"flex",justifyContent:"space-around"  }}>
-              <h5 onClick={()=>setIsModalOpen2(false)}>Add Question</h5>
-              <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
-            </div>
-                <div className="mod">
-                <div className="modal__question">
-                <i class="fa-solid fa-globe"></i>
-                  <p>Everyone</p>
-                  <span><i class="fa-solid fa-angle-down"></i></span>
-                </div>
-                </div>
-                <div className="modal__answer">
-                  <ReactQuil placeholder="Say Something....." />
-                  <div className="modal__buttons"></div>
-                </div>
-                <div className="modal__button">
-                  <button
-                    className="cancel"
-                    onClick={() => setIsModalOpen2(false)}
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    className="add"
-                    type="Submit"
-                    onClick={() => setIsModalOpen2(false)}
-                  >
-                    Post
-                  </button>
-                </div>
-              </Modal>
-        {/* modal */}
-        <Modal open = {isModalOpen}
-          closeIcon = {Close} onClose={()=> setIsModalOpen(false)}
-          closeOnEsc center closeOnOverlayClick={false} 
+          open={isModalOpen2}
+          closeIcon={Close}
+          onClose={() => setIsModalOpen2(false)}
+          closeOnEsc
+          center
+          closeOnOverlayClick={false}
           styles={{
-            overlay:{
-              height:"auto"
-            }
-          }}>
-        
-        <div className="modal_title" style={{display:"flex",justifyContent:"space-around"  }}>
-              <h5>Add Question</h5>
-              <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
+            overlay: {
+              height: "auto",
+            },
+          }}
+        >
+          <div
+            className="modal_title"
+            style={{ display: "flex", justifyContent: "space-around" }}
+          >
+            <h5 onClick={() => setIsModalOpen2(false)}>Add Question</h5>
+            <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
+          </div>
+          <div className="mod">
+            <div className="modal__question">
+              <i class="fa-solid fa-globe"></i>
+              <p>Everyone</p>
+              <span>
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
             </div>
-            <div className='tips'>
-          <h3>Tips on getting good answers quickly</h3>
-         <ul>
-          <li>Make sure your question has not been asked already</li>
-          <li>Keep your question short and to the point</li>
-          <li>Double-check grammar and spelling</li>
-         </ul>
-         </div>
-            <div className="modal__info">
-              <img src="https://qph.cf2.quoracdn.net/main-thumb-2343499123-200-klaahntbbdzxnxrjcnjiysashxmagsfc.jpeg" alt="" srcset=""className="avatar" />
-              <div className="modal__scop">
+          </div>
+          <div className="modal__answer">
+            <ReactQuil placeholder="Say Something....." />
+            <div className="modal__buttons"></div>
+          </div>
+          <div className="modal__button">
+            <button className="cancel" onClick={() => setIsModalOpen2(false)}>
+              Cancel
+            </button>
+            <button
+              className="add"
+              type="Submit"
+              onClick={() => setIsModalOpen2(false)}
+            >
+              Post
+            </button>
+          </div>
+        </Modal>
+        {/* modal */}
+        <Modal
+          open={isModalOpen}
+          closeIcon={Close}
+          onClose={() => setIsModalOpen(false)}
+          closeOnEsc
+          center
+          closeOnOverlayClick={false}
+          styles={{
+            overlay: {
+              height: "auto",
+            },
+          }}
+        >
+          <div
+            className="modal_title"
+            style={{ display: "flex", justifyContent: "space-around" }}
+          >
+            <h5>Add Question</h5>
+            <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
+          </div>
+          <div className="tips">
+            <h3>Tips on getting good answers quickly</h3>
+            <ul>
+              <li>Make sure your question has not been asked already</li>
+              <li>Keep your question short and to the point</li>
+              <li>Double-check grammar and spelling</li>
+            </ul>
+          </div>
+          <div className="modal__info">
+            <img
+              src="https://qph.cf2.quoracdn.net/main-thumb-2343499123-200-klaahntbbdzxnxrjcnjiysashxmagsfc.jpeg"
+              alt=""
+              srcset=""
+              className="avatar"
+            />
+            <div className="modal__scop">
               <i class="fa-solid fa-users"></i>
-                <p>Public</p>
-                <i class="fa-solid fa-caret-down"></i>
-              </div>
+              <p>Public</p>
+              <i class="fa-solid fa-caret-down"></i>
             </div>
-            <div className="modal__Field">
-              <input style={{outline:"none",padding:'20px'}} type="text" name="" id="" placeholder="Start your Question with what, How, Why, etc."/>
-              <div style={{
-                display:"flex",
-                flexDirection:"column"
-              }}>
-                {/* <input value={inputUrl}
+          </div>
+          <div className="modal__Field">
+            <input
+              style={{ outline: "none", padding: "20px" }}
+              type="text"
+              name=""
+              id=""
+              placeholder="Start your Question with what, How, Why, etc."
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {/* <input value={inputUrl}
                 onChange={(e)=>{
                   setInputUrl(e.target.value)
                 }} style={{
@@ -103,24 +125,28 @@ function Quorabox() {
                   outline: "2px solid #000"
                 }} type="text" placeholder="Optional include a link that give context" />
                 { */}
-                  {/* inputUrl !== "" && <img style={{
+              {/* inputUrl !== "" && <img style={{
                     height:"40vh",
                     objectFit:"contain"
                   }} src={inputUrl} /> */}
-                  
-                {/* } */}
-                {/* <img src={inputUrl} alt="image" /> */}
-              </div>
+
+              {/* } */}
+              {/* <img src={inputUrl} alt="image" /> */}
             </div>
-            <div className="modal__button">
-              <button className="cancel" onClick={()=>setIsModalOpen(false)}>
-                Cancel
-              </button>
-              <button className="adds" type="Submit"  onClick={()=>setIsModalOpen(false)}>
-                Add Question
-              </button>
-            </div>
-          </Modal>
+          </div>
+          <div className="modal__button">
+            <button className="cancel" onClick={() => setIsModalOpen(false)}>
+              Cancel
+            </button>
+            <button
+              className="adds"
+              type="Submit"
+              onClick={() => setIsModalOpen(false)}
+            >
+              Add Question
+            </button>
+          </div>
+        </Modal>
         <div className="quoraBox_info">
           <img
             src="https://qph.cf2.quoracdn.net/main-thumb-2343499123-50-klaahntbbdzxnxrjcnjiysashxmagsfc.jpeg"
@@ -169,7 +195,11 @@ function Quorabox() {
                 ></path>
               </g>
             </svg>
-            <button style={{cursor:"pointer"}} onClick={() => setIsModalOpen(true)} className="post__btn">
+            <button
+              style={{ cursor: "pointer" }}
+              onClick={() => setIsModalOpen(true)}
+              className="post__btn"
+            >
               Ask
             </button>
           </span>
@@ -203,7 +233,7 @@ function Quorabox() {
                 ></path>
               </g>
             </svg>
-            <button style={{cursor:"pointer"}}>Answer</button>
+            <button style={{ cursor: "pointer" }}>Answer</button>
           </span>
           <hr />
           <span>
@@ -229,7 +259,12 @@ function Quorabox() {
                 ></path>
               </g>
             </svg>
-            <button style={{cursor:"pointer"}} onClick={() => setIsModalOpen2(true)}>Post</button>
+            <button
+              style={{ cursor: "pointer" }}
+              onClick={() => setIsModalOpen2(true)}
+            >
+              Post
+            </button>
           </span>
         </div>
       </div>
