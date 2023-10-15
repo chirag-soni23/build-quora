@@ -1,9 +1,11 @@
-*{
-    margin: 0;
+/* Reset default margins, padding, and box-sizing for all elements */
+*{    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Header Styles */
 .header{
+    /* Header dimensions and positioning */
     height: 8vh;
     width: 100%;
     display: flex;
@@ -17,10 +19,12 @@
     background-color: #fff;
 
 }
+/* Logo in the header */
 .header .content img{
     height: 30px;
     width: 100px;
 }
+/* Header content container */
 .header .content{
    display: flex;
    justify-content: center;
@@ -29,6 +33,7 @@
    margin-right: 100px;
 
 }
+/* Header icons container */
 .header .icons{
     display: flex;
     justify-content: center;
@@ -37,6 +42,7 @@
     font-size: 20px;
     color: #747474;
 }
+/* Header buttons */
 .header button{
   width: 10vw;
   height: 5vh;
@@ -51,6 +57,7 @@
   padding: 10px;
   border-radius: 25px;
 }
+/* Header icon styles */
 .header .icon{
   padding: 10px 10px;
   color: gray;
@@ -59,6 +66,7 @@
   padding: 10px 10px;
   
 }
+/* Header icon hover effect */
 .header .icon:hover{
   /* background-color: #d5d5d5; */
   color: red;
@@ -72,6 +80,7 @@
 
 
 }
+/* Search Input Styles */
 .input{
     background-color: #fff;
     width: 30%;
@@ -83,6 +92,7 @@
     border: 1px solid rgb(96, 95, 95);
     
   }
+  /* Search input field */
     .input input[type='search']{
       width: 17rem;
       outline: none;
@@ -90,24 +100,26 @@
       background: transparent;
       font-size: 18px;
 }
+/* Placeholder style for the search input */
 input input[type='search']::placeholder{
     font-size: 1rem;
     color: rgb(49,49,49);
     font-weight: 100;
 }
+/* Search input icon style */
 .input i{
     font-size: 0.8rem;
     color: grey;
 
 }
-/*  */
+/* Modal Styles */
 .modal_title {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
     border-bottom: 1px solid rgba(187, 187, 187, 0.5);
   }
-  
+  /* Modal title text style */
   .modal_title > h5 {
     color: gray;
     font-size: 20px;
@@ -115,28 +127,30 @@ input input[type='search']::placeholder{
     font-weight: 500;
     margin-right: 30px;
   }
-  
+  /* Modal title hover effect */
   .modal_title > h5:hover {
     color: #b92b27;
   }
-  
+  /* Modal Info Styles */
   .modal__info {
     display: flex;
     align-items: center;
     margin-top: 30px;
   }
+  
+/* Circular image in modal */
   .modal__info > img{
     border-radius: 50%;
     height: 30px;
     width: 30px;
   }
-  
+  /* Text in modal info */
   .modal__info > p {
     margin-left: 10px;
     font-size: small;
     color: gray;
   }
-  
+  /* Modal scope information */
   .modal__info > .modal__scope {
     display: flex;
     align-items: center;
@@ -147,20 +161,22 @@ input input[type='search']::placeholder{
     border-radius: 33px;
     cursor: pointer;
   }
-  
+  /* Modal Field Styles */
   .modal__Field {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     flex: 1;
   }
-  
+  /* Link within the modal field */
   .modal__Field > .modal__fieldLink {
     color: gray;
     display: flex;
     margin-top: 10px;
     align-items: center;
   }
+  
+/* Modal scope styles */
   .modal__scop{
     display: flex;
     gap: 10px;
@@ -169,21 +185,21 @@ input input[type='search']::placeholder{
     border-radius: 25px;
     padding: 10px;
   }
-  
+  /* Input within the modal field link */
   .modal__Field > .modal__fieldLink > input {
     flex: 1;
     border: none;
     outline: none;
     margin-left: 5px;
   }
-  
+  /* Modal Buttons Styles */
   .modal__buttons {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 10px;
     align-items: center;
   }
-  
+  /* Cancel button in modal */
   .modal__buttons > .cancel {
     margin-top: 10px;
     border: none;
@@ -194,11 +210,11 @@ input input[type='search']::placeholder{
     border-radius: 33px;
     cursor: pointer;
   }
-  
+  /* Cancel button hover effect */
   .modal__buttons > .cancel:hover {
     color: red;
   }
-  
+  /* Add button in modal */
   .modal__buttons > .add {
     border: none;
     outline: none;
@@ -211,7 +227,7 @@ input input[type='search']::placeholder{
     cursor: pointer;
     width: 50%;
   }
-  
+  /* Add button hover effect */
   .modal__buttons > .add:hover {
     background-color: #eee;
     color: #222;
