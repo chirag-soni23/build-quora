@@ -9,8 +9,6 @@ import { Link } from "react-router-dom";
 function Quoraheader() {
    const [isModalOpen,setIsModalOpen] = useState(false)
    const [isModalOpen2,setIsModalOpen2] = useState(false)
-
-  //  const [inputUrl,setInputUrl] = useState("")
    const Close =<i class="fa-solid fa-xmark"></i>
   return (
     <div className="header">
