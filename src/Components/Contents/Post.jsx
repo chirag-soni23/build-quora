@@ -51,11 +51,13 @@ function Post() {
                   },
                 }}
               >
+                
                 <div className="modal__question">
                   <h1>This is a test question</h1>
                   <p>Asked by </p>
                   <span>Username</span> on TimeStamp
                 </div>
+            
                 <div className="modal__answer">
                   <ReactQuil placeholder="Enter Your answer" />
                   <div className="modal__buttons"></div>
@@ -68,7 +70,7 @@ function Post() {
                     Cancel
                   </button>
                   <button
-                    className="add"
+                    className="adds"
                     type="Submit"
                     onClick={() => setIsModalOpen(false)}
                   >

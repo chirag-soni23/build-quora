@@ -177,13 +177,13 @@
     cursor: pointer;
     margin-left: 30px;
   }
-  
+/*   
   .modal__question {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
-  }
+  } */
   .tips{
     background: #EBF0FF;
     padding: 30px;
@@ -199,12 +199,32 @@
     margin-left: 20px;
     color: #2E69FF;
   }
-  .modal__question > h1 {
-    color: #8f1f1b;
-    font-weight: 600;
-    margin-bottom: 10px;
+  .mod{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .modal__question > p {
+  .modal__question  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    width: fit-content;
+    border-radius: 25px;
+  }
+  .modal__question:hover{
+    background: #adadada5;
+    padding: 10px;
+  }
+  .modal__question i {
+    font-size: 20px;
+  }
+  /* .modal__question > p {
     color: gray;
     font-size: small;
   }
@@ -212,7 +232,7 @@
   .modal__question > p > .name {
     color: black;
     font-weight: bold;
-  }
+  } */
   
   .modal__answer {
     display: flex;
@@ -251,21 +271,35 @@
   .modal__button > .cancel:hover {
     color: red;
   }
+  .modal__button > .adds{
+    background-color: #000;
+    width: 40%;
+    color: #fff;
+    padding: 10px;
+    border:none;
+    border-radius: 25px;
+  }
+  .modal__button > .adds:hover{
+    background-color: #828282;
+    width: 40%;
+    color: #fff;
+    padding: 10px;
+  }
   .modal__button > .add {
     border: none;
     outline: none;
     margin-top: 5px;
-    background-color: #222;
+    background-color:#96B4FF;
     color: white;
     font-weight: 700;
     padding: 10px;
     border-radius: 33px;
     cursor: pointer;
-    width: 50%;
+    width: 10%;
   }
   .modal__button > .add:hover {
-    background-color: #eee;
-    color: #222;
+    background-color: #5283ff;
+    color: #fff;
   }
   
   .react-responsive-modal-modal {

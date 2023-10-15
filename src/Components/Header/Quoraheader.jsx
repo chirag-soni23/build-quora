@@ -4,13 +4,62 @@ import "../css/Quora.css"
 import "../css/Post.css"
 import "react-responsive-modal/styles.css"
 import Modal from "react-responsive-modal";
+import ReactQuil from "react-quill";
 import { Link } from "react-router-dom";
 function Quoraheader() {
    const [isModalOpen,setIsModalOpen] = useState(false)
+   const [isModalOpen2,setIsModalOpen2] = useState(false)
+
   //  const [inputUrl,setInputUrl] = useState("")
    const Close =<i class="fa-solid fa-xmark"></i>
   return (
     <div className="header">
+      {/* modal */}
+      <Modal
+                open={isModalOpen2}
+                closeIcon={Close}
+                onClose={() => setIsModalOpen2(false)}
+                closeOnEsc
+                center
+                closeOnOverlayClick={false}
+                styles={{
+                  overlay: {
+                    height: "auto",
+                  },
+                }}
+              >
+                <div className="modal_title" style={{display:"flex",justifyContent:"space-around"  }}>
+              <h5 onClick={()=>setIsModalOpen2(false)}>Add Question</h5>
+              <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
+            </div>
+                <div className="mod">
+                <div className="modal__question">
+                <i class="fa-solid fa-globe"></i>
+                  <p>Everone</p>
+                  <span><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                </div>
+                <div className="modal__answer">
+                  <ReactQuil placeholder="Say Something....." />
+                  <div className="modal__buttons"></div>
+                </div>
+                <div className="modal__button">
+                  <button
+                    className="cancel"
+                    onClick={() => setIsModalOpen2(false)}
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    className="add"
+                    type="Submit"
+                    onClick={() => setIsModalOpen2(false)}
+                  >
+                    Post
+                  </button>
+                </div>
+              </Modal>
+      {/* modal */}
       <div className="content">
         <div className="logo">
       <Link to="/"> <img
@@ -60,7 +109,7 @@ function Quoraheader() {
         
         <div className="modal_title" style={{display:"flex",justifyContent:"space-around"  }}>
               <h5>Add Question</h5>
-              <h5>Create Post</h5>
+              <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
             </div>
             <div className='tips'>
           <h3>Tips on getting good answers quickly</h3>
@@ -107,7 +156,7 @@ function Quoraheader() {
               <button className="cancel" onClick={()=>setIsModalOpen(false)}>
                 Cancel
               </button>
-              <button className="add" type="Submit"  onClick={()=>setIsModalOpen(false)}>
+              <button className="adds" type="Submit"  onClick={()=>setIsModalOpen(false)}>
                 Add Question
               </button>
             </div>
