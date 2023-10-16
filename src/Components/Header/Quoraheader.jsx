@@ -6,6 +6,7 @@ import "react-responsive-modal/styles.css"
 import Modal from "react-responsive-modal";
 import ReactQuil from "react-quill";
 import { Link } from "react-router-dom";
+// quoraheader file
 function Quoraheader() {
    const [isModalOpen,setIsModalOpen] = useState(false)
    const [isModalOpen2,setIsModalOpen2] = useState(false)
