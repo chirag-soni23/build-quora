@@ -1,5 +1,6 @@
+/* Styling for a widget container */
 .widget{
-    flex: 0.2;
+    flex: 0.2; /* Takes up 20% of available space */
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -8,19 +9,22 @@
     border-radius: 5px;
     height: fit-content;
     background-color: #fff;
-    position: fixed;
-    top: 20%;
-    right: 80px;
+    position: fixed;/* Fixed position on the viewport */
+    top: 20%;/* Positioned 20% from the top of the viewport */
+    right: 80px; /* Positioned 20% from the top of the viewport */
 }
+/* Styling for the widget header */
 .widget__header{
     border-bottom: 1px solid lightgray;
 }
+/* Styling for the header text within the widget */
 .widget__header >h5{
     padding: 10px;
     color: rgb(80,80,80);
     font-size: 15px;
     letter-spacing: 1.1px;
 }
+/* Styling for the widget contents */
 .widget__contents{
     display: flex;
     flex-direction: column;
