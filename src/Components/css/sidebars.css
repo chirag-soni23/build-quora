@@ -1,3 +1,4 @@
+/* Global reset for all elements */
 *{
     margin:0;
     padding: 0;
@@ -5,12 +6,15 @@
     /* border:1px solid black; */
 }
 
+/* Commented out CSS class for the Sidebar, may not be in use */
+
 /* .Sidebar{
     width:100%;
     height:100vh;
     
 } */
 
+/* Styling for the sidebar navigation */
 .Sidenav {
     height: 100%;
     width: 250px;
@@ -22,6 +26,8 @@
     padding-top: 20px;
     padding-right: 2rem;
   }
+
+/* Styling for individual information items in the sidebar */
   .info{
     width: 60%;
     height:45px;
@@ -31,15 +37,21 @@
     left:110px;
      
   }
+
+/* Background color change on hover for info items */
   .info:hover{
     background-color:rgb(209, 206, 206) ;
   }
+
+/* Styling for images within info items */
   .info img{
     width:25px;
     height:25px;
     border:none;
     border-radius:5px;
   }
+
+/* Styling for the information text in the sidebar */
   .info2{
     padding:0.6rem;
     font-size: 16px;
@@ -49,6 +61,7 @@
     
   }
 
+/* Styling for the side information container within the sidebar */
  .Sidenav .sideinfo{
  
     width:60%;
@@ -64,11 +77,12 @@
     font-size: 14px;
    
   }
+/* Styling for links in the sidebar */
    a{
     text-decoration: none;
    }
 
-
+/* Media query to hide the sidebar on small screens */
    @media only screen and (max-width: 600px) {
 
     .Sidenav{
