@@ -1,26 +1,35 @@
+
+/* Styling for the widget contents container */
 .widget__contents{
     display: flex;
     cursor: pointer;
    
 }
+/* Styling for individual widget content items */
+
 .widget__content{
     margin:5px;
     display: flex;
     padding: 5px;
     border-bottom: 1px solid lightgrey;
     }
+
+/* Styling for images within widget content */
     .widget__content >img{
         height: 30px;
         border-radius: 50%;
     }
+
+/* Styling for the title and text within widget content */
     .widget__contentTitle{
         margin-left: 10px;
     }
     .widget__contentTitle > h5{
-        color: rgb(70,68,68);
+        color: rgb(70,68,68); /* Sets text color for title */
     }
     .widget__contentTitle > p{
         color: gray;
-        font-size: small;
+        font-size: small; /* Adjusts text color and size for additional information */
+
     }
 
