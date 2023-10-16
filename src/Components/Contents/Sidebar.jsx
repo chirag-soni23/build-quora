@@ -1,13 +1,14 @@
-import React from 'react'
-import "../css/Sidebar.css"
-import SidebarOption from './SidebarOption'
+import React from 'react';
+import "../css/Sidebar.css";
+import SidebarOption from './SidebarOption';
 
 function Sidebar() {
   return (
     <div className='sidebar'>
-        <SidebarOption/>
+      {/* Sidebar component containing various options */}
+      <SidebarOption />
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
