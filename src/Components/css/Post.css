@@ -162,7 +162,12 @@
   .post__question p{
     width: 100%;
   }
-  
+  .i{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
   .post__footerAction > i:hover {
     color: rgb(0, 140, 255);
     margin-right: 40px;
@@ -177,13 +182,13 @@
     cursor: pointer;
     margin-left: 30px;
   }
-/*   
+  
   .modal__question {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
-  } */
+  }
   .tips{
     background: #EBF0FF;
     padding: 30px;

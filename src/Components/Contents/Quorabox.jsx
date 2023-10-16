@@ -1,65 +1,22 @@
 import React from "react";
 import "../css/Quorabox.css";
-import Modal from "react-responsive-modal"
-import ReactQuil from "react-quill";
+import Modal from "react-responsive-modal";
+import ReactQuill from "react-quill";
 import { useState } from "react";
 import "../css/Post.css";
+
 function Quorabox() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isModalOpen2, setIsModalOpen2] = useState(false);
+  // State to manage the visibility of two modals
+  const [isModalOpen, setIsModalOpen] = useState(false); // For the first modal
+  const [isModalOpen2, setIsModalOpen2] = useState(false); // For the second modal
+
+  // Icon for closing the modals
   const Close = <i class="fa-solid fa-xmark"></i>;
 
   return (
     <>
       <div className="quoraBox">
-        {/* modal */}
-        <Modal
-          open={isModalOpen2}
-          closeIcon={Close}
-          onClose={() => setIsModalOpen2(false)}
-          closeOnEsc
-          center
-          closeOnOverlayClick={false}
-          styles={{
-            overlay: {
-              height: "auto",
-            },
-          }}
-        >
-          <div
-            className="modal_title"
-            style={{ display: "flex", justifyContent: "space-around" }}
-          >
-            <h5 onClick={() => setIsModalOpen2(false)}>Add Question</h5>
-            <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
-          </div>
-          <div className="mod">
-            <div className="modal__question">
-              <i class="fa-solid fa-globe"></i>
-              <p>Everyone</p>
-              <span>
-                <i class="fa-solid fa-angle-down"></i>
-              </span>
-            </div>
-          </div>
-          <div className="modal__answer">
-            <ReactQuil placeholder="Say Something....." />
-            <div className="modal__buttons"></div>
-          </div>
-          <div className="modal__button">
-            <button className="cancel" onClick={() => setIsModalOpen2(false)}>
-              Cancel
-            </button>
-            <button
-              className="add"
-              type="Submit"
-              onClick={() => setIsModalOpen2(false)}
-            >
-              Post
-            </button>
-          </div>
-        </Modal>
-        {/* modal */}
+        {/* First Modal */}
         <Modal
           open={isModalOpen}
           closeIcon={Close}
@@ -80,6 +37,7 @@ function Quorabox() {
             <h5>Add Question</h5>
             <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
           </div>
+          {/* Tips for asking questions */}
           <div className="tips">
             <h3>Tips on getting good answers quickly</h3>
             <ul>
@@ -88,14 +46,15 @@ function Quorabox() {
               <li>Double-check grammar and spelling</li>
             </ul>
           </div>
+          {/* Modal content for adding a question */}
           <div className="modal__info">
             <img
               src="https://qph.cf2.quoracdn.net/main-thumb-2343499123-200-klaahntbbdzxnxrjcnjiysashxmagsfc.jpeg"
               alt=""
-              srcset=""
+              srcSet=""
               className="avatar"
             />
-            <div className="modal__scop">
+            <div className="modal__scope">
               <i class="fa-solid fa-users"></i>
               <p>Public</p>
               <i class="fa-solid fa-caret-down"></i>
@@ -115,23 +74,6 @@ function Quorabox() {
                 flexDirection: "column",
               }}
             >
-              {/* <input value={inputUrl}
-                onChange={(e)=>{
-                  setInputUrl(e.target.value)
-                }} style={{
-                  margin :"5px 0",
-                  border: "1px solid lightgray",
-                  padding:"10px",
-                  outline: "2px solid #000"
-                }} type="text" placeholder="Optional include a link that give context" />
-                { */}
-              {/* inputUrl !== "" && <img style={{
-                    height:"40vh",
-                    objectFit:"contain"
-                  }} src={inputUrl} /> */}
-
-              {/* } */}
-              {/* <img src={inputUrl} alt="image" /> */}
             </div>
           </div>
           <div className="modal__button">
@@ -147,19 +89,74 @@ function Quorabox() {
             </button>
           </div>
         </Modal>
+
+        {/* Second Modal */}
+        <Modal
+          open={isModalOpen2}
+          closeIcon={Close}
+          onClose={() => setIsModalOpen2(false)}
+          closeOnEsc
+          center
+          closeOnOverlayClick={false}
+          styles={{
+            overlay: {
+              height: "auto",
+            },
+          }}
+        >
+          <div
+            className="modal_title"
+            style={{ display: "flex", justifyContent: "space-around" }}
+          >
+            <h5 onClick={() => setIsModalOpen2(false)}>Add Question</h5>
+            <h5 onClick={() => setIsModalOpen2(true)}>Create Post</h5>
+          </div>
+          <div className="i">
+          <div className="modal__question">
+            <i class="fa-solid fa-globe"></i>
+            <p>Everyone</p>
+            <span>
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+          </div>
+          </div>
+          <div className="modal__answer">
+            <ReactQuill placeholder="Say Something....." />
+            <div className="modal__buttons"></div>
+          </div>
+          <div className="modal__button">
+            <button className="cancel" onClick={() => setIsModalOpen2(false)}>
+              Cancel
+            </button>
+            <button
+              className="add"
+              type="Submit"
+              onClick={() => setIsModalOpen2(false)}
+            >
+              Post
+            </button>
+          </div>
+        </Modal>
+
+        {/* Quora box content */}
         <div className="quoraBox_info">
           <img
             src="https://qph.cf2.quoracdn.net/main-thumb-2343499123-50-klaahntbbdzxnxrjcnjiysashxmagsfc.jpeg"
             alt=""
           />
           <div className="quoraBox_quora">
-            <input className="input" style={{cursor:'pointer',}}
+            <input
+              className="input"
+              style={{ cursor: "pointer" }}
               type="text"
-              placeholder="What do you want to ask or Share ?" readOnly
+              placeholder="What do you want to ask or Share ?"
+              readOnly
             />
           </div>
         </div>
+
         <div className="quorabox__btn">
+          {/* Buttons for asking, answering, and posting */}
           <span>
             <svg
               width="24"
@@ -273,3 +270,4 @@ function Quorabox() {
 }
 
 export default Quorabox;
+
