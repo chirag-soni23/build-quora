@@ -1,5 +1,9 @@
+/* Define a flex container with the class '.feed' */
 .feed{
+      /* Set the display property to 'flex' for flexible layout */
     display: flex;
+     /* Arrange the flex items in a vertical column */
     flex-direction: column;
+     /* Allocate 60% of available space to this container */
     flex:0.6;
 }
