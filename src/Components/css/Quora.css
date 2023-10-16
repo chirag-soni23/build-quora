@@ -1,7 +1,10 @@
+
+/* Styling for the Quora container */
 .quora{
     width: 100%;
     min-width: fit-content;
 }
+/* Styling for the Quora content wrapper */
 .quora_contents{
     display: flex;
     justify-content: center;
@@ -11,15 +14,18 @@
     width: 100%;
     flex-wrap: wrap;
 }
+/* Styling for individual Quora content items */
 .quora_content{
     display: flex;
     flex-direction: row;
     padding: 0 10px;
 }
+/* Styling for the modal container */
 .react-responsive-modal-modal{
     width: 90vw;
     height: 90vh;
 }
+/* Styling for the Quill text editor */
 .quill{
     height: 50vh;
 }

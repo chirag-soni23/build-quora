@@ -1,3 +1,4 @@
+/* Styling for a post container */
 .post {
     display: flex;
     flex-direction: column;
@@ -9,34 +10,37 @@
     max-width: 700px;
     box-shadow: 0px 5px 8px -9px solid rgab(0, 0, 0, 0.5);
   }
+/* Styling for post information section within a post */
  .post .post__info {
     display: flex;
     align-items: center;
   }
+/* Styles for user avatars in post info */
   .post  .post__info img{
     border-radius: 50%;
     height: 40px;
     width: 40px;
   }
-  
+  /* Styling for post author's name and timestamp */
   .post__info > h4 {
     margin-left: 10px;
     cursor: pointer;
     font-size: 13px;
   }
+/* Adding underline on author's name hover */
   .post__info > h4:hover {
     text-decoration: underline;
   }
-  
+  /* Styling for post timestamp */
   .post__info > small {
     margin-left: 10px;
   }
-  
+  /* Styling for the post body */
  .post .post__body {
     display: flex;
     flex-direction: row;
   }
-  
+  /* Styling for post questions */
   .post__body > .post__question {
     margin-top: 10px;
     font-weight: bold;
@@ -47,32 +51,38 @@
     flex-direction: column;
     flex: 1;
   }
+
+/* Styling for the author section within a post */
   .post .author{
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 20px;
   }
+/* Styling for clickable author usernames */
   .post .author .span{
     color: blue;
     font-size: 14px;
     cursor: pointer;
   }
+/* Styling for author usernames */
   .post .author .username{
     font-size: 18px;
     color: #292929;
   }
+/* Styling for additional author information */
   .post .author p{
     color: #747474;
     font-size: 13px;
     margin-top: 5px;
   }
+/* Styling for small text elements */
   .post small{
     margin-top: 20px;
     font-weight: 500;
     font-size: 19px;
   }
-  
+  /* Styling for post question buttons */
   .post__body > .post__question .post__btn {
     margin-left: auto;
     cursor: pointer;
@@ -89,19 +99,21 @@
   .post__question img{
     margin-top: 20px;
   }
-  
+  /* Adding hover effect to post question buttons */
   .post__question .post__btn:hover {
     color: #222;
     background: lightgray;
   }
+/* Styling for user avatars in answered posts */
  .post-answer__container .post-answered img{
     border-radius: 50%;
   }
-  
+
+  /* Adding underline on text hover within a post question */
   .post__question > p:hover {
     text-decoration: underline;
   }
-  
+  /* Styling for post answer paragraphs */
   .post__body > .post__answer > p {
     margin-bottom: 10px;
   }
@@ -109,7 +121,8 @@
   /* .post__image {
     background: rgb(0, 140, 255);
   } */
-  
+
+  /* Styling for images within a post */
   .post__body > img {
     width: 100%;
     max-height: 400px;
@@ -119,24 +132,26 @@
     cursor: pointer;
     margin-top: 10px;
   }
-  
+  /* Styling for the post footer */
   .post__footer {
     display: flex;
     align-items: center;
     margin-top: 5px;
   }
   
+/* Styling for footer icons */
   .post__footer > i{
     color: gray;
     margin-right: 40px;
     cursor: pointer;
   }
+/* Styling for active modal titles */
   .modal__title:active{
     border-bottom: 2px solid blue;
     width: 50%;
 
   }
-  
+  /* Styling for post footer action buttons */
   .post__footerAction {
     border:1px solid gray;
     padding: 5px;
@@ -148,17 +163,20 @@
     padding: 5px;
     border-radius: 25px;
   }
+/* Styling for footer action icons */
   .post__footerAction > i {
     color: gray;
     margin-right: 40px;
     cursor: pointer;
     color: darkgray;
   }
+/* Styling for footer action text */
   .post__footerAction h4{
     margin-left:-28px;
     margin-right: 5px;
     color: darkgray;
   }
+/* Styling for post action paragraphs  */
   .post__question p{
     width: 100%;
   }
@@ -167,28 +185,29 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-  }
+  } 
+  /* Adding hover effect to footer action icons */
   .post__footerAction > i:hover {
     color: rgb(0, 140, 255);
     margin-right: 40px;
   }
-  
+  /* Aligning footer to the right */
   .post__footerLeft {
     margin-left: auto;
   }
-  
+  /* Styling for left-aligned footer icons */
   .post__footerLeft > i {
     color: gray;
     cursor: pointer;
     margin-left: 30px;
   }
-  
   .modal__question {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
   }
+/* Styling for tips section */
   .tips{
     background: #EBF0FF;
     padding: 30px;
@@ -196,20 +215,28 @@
     width: 80%;
     border-radius: 25px; 
   }
+
+/* Styling for tips section title */
   .tips h3{
     color: #2E69FF;
   }
+
+/* Styling for tips section list items */
   .tips ul li{
     margin-top: 10px;
     margin-left: 20px;
     color: #2E69FF;
   }
+
+/* Styling for mod element */
   .mod{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+/* Styling for modal question section */
   .modal__question  {
     display: flex;
     justify-content: center;
@@ -222,13 +249,18 @@
     width: fit-content;
     border-radius: 25px;
   }
+
+/* Adding background and padding on hover to modal question section */
   .modal__question:hover{
     background: #adadada5;
     padding: 10px;
   }
+
+/* Styling for icons within modal question section */
   .modal__question i {
     font-size: 20px;
   }
+
   /* .modal__question > p {
     color: gray;
     font-size: small;
@@ -238,13 +270,14 @@
     color: black;
     font-weight: bold;
   } */
-  
+
+/* Styling for modal answer section */
   .modal__answer {
     display: flex;
     padding-top: 20px;
     flex: 1;
   }
-  
+  /* Styling for textarea within modal answer section */
   .modal__answer > textarea {
     width: 100%;
     height: 200px;
