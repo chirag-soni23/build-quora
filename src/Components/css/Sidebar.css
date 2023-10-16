@@ -1,4 +1,7 @@
+/* Styling for the sidebar */
 .sidebar{
+    /* Margin added for spacing above the sidebar */
     margin-top: 10px;
+     /* Flex property set to 0.2 for flexible layout */
     flex:0.2;
 }
