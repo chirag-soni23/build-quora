@@ -4,15 +4,19 @@ import "react-responsive-modal/styles.css";
 import "react-quill/dist/quill.snow.css";
 import { Userdata } from "../Constant/Constant";
 
+// Define the Post component
 function Post() {
   return (
     <div className="post">
+      {/* Map through the Userdata array and render content for each item */}
       {Userdata.map((item) => (
         <>
+          {/* Post information */}
           <div className="post__info">
             <img src={item.logoimage} alt="" />
             <div className="author">
               <h4>
+                {/* Display the author's name */}
                 <span key={item.Id} className="username">
                   {item.name}
                 </span>{" "}
@@ -22,6 +26,7 @@ function Post() {
             </div>
           </div>
           <div className="post__body">
+            {/* Post content, including question and answer */}
             <div className="post__question">
               <p>{item.Question}</p>
               <small>{item.Answer}</small>
@@ -29,6 +34,7 @@ function Post() {
             </div>
           </div>
           <div className="post__footer">
+            {/* Post footer actions */}
             <div className="post__footerAction">
               <i class="fa-solid fa-arrow-up"></i>
               <h4>Upvote</h4>
@@ -67,4 +73,5 @@ function Post() {
     </div>
   );
 }
+
 export default Post;
