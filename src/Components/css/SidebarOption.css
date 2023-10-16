@@ -1,3 +1,5 @@
+
+/* Styling for the sidebar options container */
 .sidebarOptions{
     display: flex;
     flex-direction: column;
@@ -5,12 +7,14 @@
     top: 10%;
     left: 1%;
 }
+/* Styling for individual sidebar options */
 .sidebarOption{
     display: flex;
     align-items: center;
     padding: 10px;
     cursor: pointer;
 }
+/* Styling for the side information container within sidebar options */
 .sideinfo{
  
     /* width:60%; */
@@ -25,25 +29,34 @@
      padding:0.3rem;
      
   }
+
+/* Styling for text within the side information container */
   .sideinfo {
     padding: 0.2rem;
     color:grey;
     font-size: 14px;
    
   }
+
+/* Background color change on hover for sidebar options */
 .sidebarOption:hover{
     background-color: rgba(211,211,211);
     border-radius: 5px;
 }
+
+/* Styling for images within sidebar options */
 .sidebarOption > img{
     height: 30px;
     border-radius: 5px;
     margin-left: 2px;
 }
+
+/* Styling for links within the side information */
 .sideinfo a{
     text-decoration: none;
    }
 
+/* Styling for text and icons within sidebar options */
 .sidebarOption > p{
     margin-left: 10px;
     color: gray;
@@ -55,6 +68,8 @@
     font-size: medium;
     margin-left: 20px;
 }
+
+/* Styling for text within sidebar options */
 .sidebarOption > .text{
     margin-left: 23px;
     color: gray;
