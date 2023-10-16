@@ -1,3 +1,4 @@
+/* Styling for the Quora Box container */
 .quoraBox{
     display: flex;
     justify-content: flex-start;
@@ -11,6 +12,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
+/* Styling for the Quora Box information section */
 .quoraBox_info{
     display: flex;
     justify-content: flex-start;
@@ -23,6 +25,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
+/* Styling for the Quora Box buttons section */
 .quorabox__btn hr{
     height: 20px;
 }
@@ -33,17 +36,21 @@
     align-items: center;
 
 }
+
 .quorabox__btn button{
 background: transparent;
 border:none;
 margin-left: 5px;
 
 }
+/* Styling for the span within Quora Box buttons */
 .quorabox__btn span{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* Styling for the input field within Quora Box */
 .quoraBox input{
     padding: 10px;
     width: 500px;
@@ -52,19 +59,29 @@ margin-left: 5px;
     border: 1px solid gray;
     border-radius: 25px;
 }
+
+/* Styling for the input field's placeholder text */
 .quoraBox input::placeholder{
     color: gray;
 }
+
+/* Adding a border on hover for the Quora Box */
 .quoraBox:hover{
     border:1px solid rgb(175,175,175);
 }
+
+/* Styling for the Quora Box information section */
 .quoraBox_info{
     display: flex;
     align-items: center;
 }
+
+/* Styling for user avatars in the Quora Box information section */
 .quoraBox .quoraBox_info img{
     border-radius: 50%;
 }
+
+/* Styling for the name in the Quora Box information section */
 .quoraBox_info h5{
     color: rgb(129,129,129);
     font-weight: 300;
@@ -72,10 +89,12 @@ margin-left: 5px;
     font-size: large;
     font-weight: bold;
 }
+/* Background color change on input hover */
 .input:hover{
     background-color: #dfdfdf;
     
 }
+/* Styling for the Quora Box Quora content section */
 .quoraBox_quora{
     display: flex;
     margin-top: 10px;
